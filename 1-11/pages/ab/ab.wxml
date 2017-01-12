@@ -1,0 +1,159 @@
+<view>
+<!--button-->
+    <view>
+        <button>text button</button>
+    </view>
+
+
+<!--plachhloder-->
+    <view>
+        <input class="input-plachhloder" name="input" placeholder="text placeholder" />
+    </view>
+
+<!--slider-->    
+    <view>
+    <slider show-value value="100">
+    <span class="slider-value"><p>100</p></span>
+    </slider>
+    </view>
+
+<!--list-->
+    <view class="ab-list">
+        <view class="ab-list-title">title</view> 
+        <view class="ab-list-con">
+            <view class="ab-list-a">
+            <view class="left">left</view>
+            <view class="right">right</view>
+            </view>
+
+            <view class="ab-list-a">
+            <view class="left">left</view>
+            <view class="right">right</view>
+            </view>                   
+        </view>
+    </view>
+
+<!--radio-->
+ <view class="ab-list">
+        <view class="ab-list-title">title</view> 
+        <view class="ab-list-con">
+           
+            <view class="ab-list-a">
+            <label>
+            <radio value="radio1">radio1</radio>
+            </label>
+            </view>
+
+            <view class="ab-list-a">
+            <label>
+            <radio value="radio2">radio2</radio>
+            </label>
+            </view>           
+        </view>
+      
+    </view>
+
+<!--checkbox-->
+<view class="ab-list">
+    <view class="ab-list-title">radio</view> 
+    <radio-group>
+    <view class="ab-list-con">
+        <view class="ab-list-a">
+        <label>
+        <view class="right"><radio id="radi01" value="radio1" checked=""></radio></view>
+        <view class="left ab-list-radio">
+        <view class="ab-li">
+        dddd
+        </view>
+        </view>
+        </label>
+        </view> 
+
+        <view class="ab-list-a">
+        <label>
+        <view class="right"><radio id="radi01" value="radio1"></radio></view>
+        <view class="left ab-list-radio">
+        <view class="ab-li">
+        dddd
+        </view>
+        </view>
+        </label>
+        </view>  
+    </view>
+    </radio-group>
+</view>
+
+
+
+<!--checkbox-->
+<view class="ab-list">
+    <view class="ab-list-title">checkbox</view> 
+    <checkbox-group>
+    <view class="ab-list-con">
+        <view class="ab-list-a">
+        <label>
+        <view class="right"><checkbox></checkbox></view>
+        <view class="left ab-list-radio">
+        <view class="ab-li">
+        dddd
+        </view>
+        </view>
+        </label>
+        </view> 
+
+        <view class="ab-list-a">
+        <label>
+        <view class="right"><checkbox></checkbox></view>
+        <view class="left ab-list-radio">
+        <view class="ab-li">
+        dddd
+        </view>
+        </view>
+        </label>
+        </view>  
+    </view>
+    </checkbox-group>
+</view>
+
+
+
+
+<!--picker 区域-->
+<view>
+    <picker range="[&quot;美国&quot;,&quot;中国&quot;,&quot;巴西&quot;,&quot;日本&quot;]" value="4" >
+    <view class="ab-picker">区域选择</view>
+    </picker>
+</view>
+
+<!--picker 时间-->
+<view>
+    <picker end="21:01" mode="time" start="" value="">
+    <view class="ab-picker">时间选择:</view>
+    </picker>
+</view>
+
+<!--picker 日期-->
+<view>
+    <picker end="21:01" mode="date" start="" value="">
+    <view class="ab-picker">日期选择:</view>
+    </picker>
+</view>
+
+ <!--swith-->
+<view>
+    <switch checked type="switch" />
+    <switch type="switch" />
+</view>
+<!--11-->
+
+
+
+
+</view>
+
+
+
+
+
+
+
