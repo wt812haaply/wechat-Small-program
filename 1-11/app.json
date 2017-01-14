@@ -1,7 +1,15 @@
 {
-  "pages":[
+  "pages":[   
+    "pages/aa/aa",
     "pages/ab/ab",
+    "pages/nav/nav",
+    "pages/search/search",
+    "pages/swiper/swiper",
     "pages/index/index",
+    "pages/actionsheet/actionsheet",
+    "pages/dialog/dialog",
+    
+    "pages/navbar/navbar",
     "pages/logs/logs"
   ]
 }

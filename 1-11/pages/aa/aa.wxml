@@ -1,0 +1,157 @@
+<view>
+
+
+<!--previewImage showModal scancode-->
+<view>
+<button type="default" size="default" bindtap="previewImage">previewImage</button>
+<button type="default" size="default" bindtap="showModal">showModal</button>
+<button type="default" size="default" bindtap="scancode">Scan code</button>
+</view>
+
+<!--loading-->
+<view class="none">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+    <button bindtap="changeHidden">show/hidden</button>
+</view>
+
+
+<!--modal-->
+<view class="none">
+    <modal hidden="" title="这里是title" confirm-text="1自定义确定按钮" cancel-text="2自定义取消按钮" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    这是对话框的内容。
+</modal>
+
+</view>
+
+
+
+
+<!--跳转-->
+<view>
+   
+   <navigator url="../ab/ab" >
+        <button type="default">跳转到新页面</button>
+    </navigator>
+</view>
+
+
+<view> 
+   <navigator url="../nav/nav" redirect >
+        <button type="default">当前页面打开</button>
+    </navigator>
+</view>
+
+
+
+
+
+<!--swiper-->
+<swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}">
+          <swiper-item>
+            <view class="swiper-item bc_{{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+
+<!--search--> 
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+
+
+<!--navbar-->
+ <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+            </view>
+        </view>
+
+
+
+<!--actionSheen-->
+
+
+<view class="weui-btn-area">
+            <button type="default" bindtap="open">ActionSheet</button>
+        </view>
+
+
+
+
+<!--Dialog-->
+
+<view class="weui-btn-area">
+            <button class="weui-btn" type="default" bindtap="openConfirm">Confirm Dialog</button>
+            <button class="weui-btn" type="default" bindtap="openAlert">Alert Dialog</button>
+        </view>
+<!--picker-->
+
+ <view class="weui-btn-area">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <button type="default">单列选择器</button>
+            </picker>
+            <picker class="weui-btn" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <button type="default">时间选择器</button>
+            </picker>
+            <picker class="weui-btn" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <button type="default">日期选择器</button>
+            </picker>
+        </view>
+
+        
+
+</view>
+
