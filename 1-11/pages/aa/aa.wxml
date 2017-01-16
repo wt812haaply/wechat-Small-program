@@ -151,7 +151,39 @@
             </picker>
         </view>
 
-        
+<!--弹出-->
+<view class="drawer_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+  <view class="close_icon" bindtap="hideModal">×</view>
+  <view class="drawer_attr_content">
+    <view class="appointment_title">预约上门时间</view>
+
+    <view class="appointment">
+      <view class="appointment_text">今天</view>
+      <button class="demo_base1 {{appointment_button1}}" >09:00~12:00</button>
+      <button class="demo_base2 {{appointment_button2}}" >13:00~18:00</button>
+    </view>
+
+    <view class="appointment">
+      <view class="appointment_text">明天</view>
+      <button class="appointment_button1" >09:00~12:00</button>
+      <button class="appointment_button2" >13:00~18:00</button>
+    </view>
+
+    <view class="appointment">
+      <view class="appointment_text">后天</view>
+      <button class="appointment_button1" >09:00~12:00</button>
+      <button class="appointment_button2" >13:00~18:00</button>
+    </view>
+  </view>
+</view>
+<view class="btn open_btn" bindtap="showModal">弹出</view>
+
+
+
+
+
 
 </view>
+
 
