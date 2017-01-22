@@ -1,10 +1,17 @@
 {
   "pages":[   
     
+    "pages/new/form/form",
+    "pages/index/index",
+    
+    "pages/new/list/list",
+ "pages/ab/ab", 
+
+
+    
     "pages/zujian/zujian",
     "pages/bottom/bottom",
-    
-
+  
     "pages/celanbuju/one/index",
     "pages/celanbuju/two/index",
     "pages/celanbuju/three/index",
@@ -14,9 +21,9 @@
     "pages/aa/aa",
     "pages/ab/ab",
     "pages/nav/nav",
-    "pages/search/search",
-    "pages/swiper/swiper",
-    "pages/index/index",
+
+
+    
     "pages/actionsheet/actionsheet",
     "pages/deposit/deposit",
     "pages/dialog/dialog",
@@ -34,16 +41,16 @@
     "backgroundTextStyle": "light",
     "list": [
       {
-        "pagePath": "pages/zujian/zujian",
+        "pagePath": "pages/index/index",
         "iconPath": "static/image/icon/home-b.png",
         "selectedIconPath": "static/image/icon/home-a.png",
-        "text": "首页"
+        "text": "收藏"
       },
       {
         "pagePath": "pages/aa/aa",
         "iconPath": "static/image/icon/comment-b.png",
         "selectedIconPath": "static/image/icon/comment-a.png",
-        "text": "发现"
+        "text": "wechat"
       }
     ]
   },

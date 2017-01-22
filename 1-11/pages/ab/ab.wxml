@@ -20,7 +20,7 @@
 
 
 <!--list-->
-    <view class="ab-list none">
+    <view class="ab-list">
         <view class="ab-list-title">title</view> 
         <view class="ab-list-con">
             <view class="ab-list-a">
@@ -36,7 +36,7 @@
     </view>
 
 <!--radio-->
- <view class="ab-list none">
+ <view class="ab-list">
         <view class="ab-list-title">title</view> 
         <radio-group>
         <view class="ab-list-con">

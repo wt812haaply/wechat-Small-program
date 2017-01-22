@@ -1,0 +1,57 @@
+{
+  "pages":[   
+    "pages/index/index",
+    "pages/zujian/zujian",
+    "pages/bottom/bottom",
+    
+    "pages/Acollection/Acollection",
+    "pages/celanbuju/one/index",
+    "pages/celanbuju/two/index",
+    "pages/celanbuju/three/index",
+    "pages/celanbuju/four/index",
+
+    
+    "pages/aa/aa",
+    "pages/ab/ab",
+    "pages/nav/nav",
+    "pages/search/search",
+    "pages/swiper/swiper",
+    
+    "pages/actionsheet/actionsheet",
+    "pages/deposit/deposit",
+    "pages/dialog/dialog",
+
+    
+    
+    "pages/navbar/navbar",
+    "pages/logs/logs"
+  ],
+ 
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/icon/home-b.png",
+        "selectedIconPath": "static/image/icon/home-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/aa/aa",
+        "iconPath": "static/image/icon/comment-b.png",
+        "selectedIconPath": "static/image/icon/comment-a.png",
+        "text": "发现"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
+
+
