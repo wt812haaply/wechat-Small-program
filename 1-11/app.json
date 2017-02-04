@@ -1,9 +1,9 @@
 {
   "pages":[   
     
-    "pages/new/form/form",
+   
     "pages/index/index",
-    
+     "pages/new/form/form",
     "pages/new/list/list",
  "pages/ab/ab", 
 
