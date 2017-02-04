@@ -1,0 +1,25 @@
+
+<!--index.wxml-->
+<!--button-->
+<view style="margin-top:20px">
+
+
+<!--跳转-->
+<view>
+  <navigator url="../snackbar/snack">
+    <button type="default">跳转到新页面Tip</button>
+  </navigator>
+</view>
+<view>
+  <navigator url="../nav/nav" redirect>
+    <button type="default">当前页面打开</button>
+  </navigator>
+</view>
+
+
+
+<!--1-->
+<view>
+</view>
+
+</view>

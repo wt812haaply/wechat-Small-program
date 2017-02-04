@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/snackbar/snack"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon/home-b.png",
+        "selectedIconPath": "image/icon/home-a.png",
+        "text": "方案1"
+      },
+      {
+        "pagePath": "pages/snackbar/snack",
+        "iconPath": "image/icon/comment-b.png",
+        "selectedIconPath": "image/icon/comment-a.png",
+        "text": "方案2"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
+
+
