@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+/*index*/
+
+.content {
+  height: 100%;
+  width: 100%;
+  background: red;
+  display: flex;
+  /*flex-direction: column;*/
+  /*flex-direction: row;
+  flex-wrap:wrap-reverse;*/
+
+  flex-flow: row wrap;
+
+  justify-content:space-between;
+  /*align-items: stretch;*/
+  /*flex-grow: 1;*/
+  flex-shrink: 1
+}
+
+.item {
+  width: 100rpx;
+  height: 100rpx;
+  background: blue;
+  border: 1px #fff solid;
+}
+.i3{
+  /*flex-grow: 3;*/
+  flex-shrink: 0;
+}

@@ -16,14 +16,41 @@
   </navigator>
 </view>
 
+<icon type="" size=""/>	
 
-<view>
-	dddd11222
-</view>
 
+
+  <image style="" mode="" src="" binderror="" bindload=""></image>
 
 <!--1-->
 <view>
+
+<checkbox value="" checked="checked"/>
+<radio value="" checked="false"/>
+</view>
+
+<view>
+	
+	<swiper indicator-dots="Boolean" indicator-color="ture" autoplay="true" interval="1000" duration="1000">
+		<!-- <block wx:for-items=""> -->
+			<swiper-item>
+				<image src="../../image/1.jpeg" class="slide-image" width="355" height="150"/>
+			</swiper-item>
+
+				<swiper-item>
+				<image src="../../image/1.jpeg" class="slide-image" width="355" height="150"/>
+			</swiper-item>
+
+				<swiper-item>
+				<image src="../../image/1.jpeg" class="slide-image" width="" height=""/>
+			</swiper-item>
+
+		<!-- </block> -->
+	</swiper>		
+
+
+
+
 </view>
 
 </view>

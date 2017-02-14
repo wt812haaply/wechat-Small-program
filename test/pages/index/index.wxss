@@ -350,4 +350,8 @@ page,
   color: #dfe4e4;
 }
 
+/*swper*/
 
+image{
+  width: 100%;
+}
