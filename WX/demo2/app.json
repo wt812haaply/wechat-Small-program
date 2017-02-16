@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "yellowgreen",
+    "navigationBarTitleText": "菜谱",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,41 @@
+/**index.wxss**/
+li,ul{
+  display: block;
+  margin: 0;padding: 0;
+}
+wx-ul{
+  margin: 0;padding: 0;
+}
+.search{
+  background: #F8F8F8;
+  height:50px;
+  width: 50%;
+  display: inline;
+  float: left
+}
+.button1{
+  width: 50%;
+  display: inline;
+  float: left;
+  height:50px;
+  line-height: 50px;
+  border-radius: 0;
+}
+
+.title{
+  width: 100%;margin: 0 auto;
+  background: #cccccc;
+  color: #9c27b0;height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.step{
+  width: 100%;margin: 0 auto;
+  background: #eeeeee;
+  line-height: 30px;
+
+}
+.image1{
+  width: 100%;
+  margin: 0;padding: 0;
+}

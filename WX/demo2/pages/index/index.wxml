@@ -1,0 +1,13 @@
+<input type="text" class="search" placeholder="请输入菜名" bindinput="inputName" />
+<button bindtap="click" class="button1">搜索</button>
+<view style="clear:both"></view>
+<view wx:for="{{message}}" style="background:#eeeeee">
+  <ul>
+    <li class="title">菜名：{{item.title}}</li>
+    <li class="step">准备步骤：</li>
+    <ul wx:for="{{step}}">
+      <li class="step">{{item.step}}</li>
+      <image src="{{item.img}}" class="image1" mode="scaleToFill" ></image>
+    </ul>
+  </ul>
+</view>
