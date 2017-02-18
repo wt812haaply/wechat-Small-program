@@ -3,6 +3,9 @@
 @import 'tab.wxss';
 @import 'searchbar.wxss';
 
+
+
+
 swiper{
 	height: 450rpx;
 }
@@ -401,13 +404,13 @@ swiper{
 .wtq{
 	/*display: flex;*/
 	width: 48%;
-	height: 204rpx;
+	height: 208rpx;
 	margin:10px 0;
 
 }
 .wtq image{
 	width: 100%;
-	height: 204rpx;
+	height: 208rpx;
 
 }
 .five--con p{

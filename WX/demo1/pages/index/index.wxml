@@ -1,5 +1,26 @@
+<!--1-->
+<view class="a" style="height:100px;">1</view>
 
 
+       
+        <view class="search1"> 
+
+            <input class="search-input1" placeholder="这是一个input" bindtap="bindFocus" auto-focus >
+                <icon type="search" size="20" color="purple" class="search-icon inside"/>
+            </input>
+        </view>
+
+   
+    
+
+
+<view class="" style="width:100%; height:auto; background:blue;">
+<input type="text" placeholder="这里只能输入文本" />
+
+<input type="number" placeholder="这里只能输入纯数字内容" />
+
+<input type="digit" placeholder="这里只能输入可带小数的数字" />
+</view>
 <!--点击跳转 Action-->
 <view class="btn-area">
   <navigator url="../zimu/zimu" hover-class="navigator-hover">跳转到新页面</navigator>
@@ -281,9 +302,7 @@
 			<p>浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗</p>
 		</view>
 
-
 		<view class="two--list--con">
-
 			<view class="two--list--con--img">11</view>
 			<view class="two--list--con--tx">
 				<view class="aoe"></view>
@@ -291,16 +310,13 @@
 			<p>浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗</p>
 		</view>
 
-
 		<view class="two--list--con">
-
 			<view class="two--list--con--img">11</view>
 			<view class="two--list--con--tx">
 				<view class="aoe"></view>
 			</view>	
 			<p>浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗</p>
 		</view>
-
 	</view>
 </view>
 <!--two 2 End-->

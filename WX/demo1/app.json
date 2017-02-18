@@ -1,10 +1,9 @@
 {
   "pages":[
-    
-    "pages/index/index",
+   "pages/index/index",
+   "pages/index/search/search",
     "pages/leftsilderdel/leftsilderdel",
     "pages/zimu/zimu",
-    
     "pages/logs/logs"
   ],
   "window":{

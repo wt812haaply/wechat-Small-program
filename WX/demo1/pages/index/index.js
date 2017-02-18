@@ -283,7 +283,21 @@ onLoad: function () {
   },
   //对话框 End  
 
-  
+//share Action
+  onShareAppMessage: function () {
+    return {
+      title: '微信小程序联盟',
+      desc: '最具人气的小程序开发联盟!',
+      path: '/page/user?id=123'
+    }
+  },
+  //share End
+ bindFocus:function(){
+        wx.navigateTo({
+        url: './search/search'
+      })
+    },
+
 })
 
 
