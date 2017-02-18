@@ -5,7 +5,6 @@
 /*laber*/
 .checkbox-1, .radio-2{
    height:auto;
-
    padding:10px 0;
    margin: 0 10px -1px 10px;
    border-bottom: 1px red solid;
@@ -13,17 +12,24 @@
 }
 .checkbox-L,.radio-L{
 	display: flex;
-	align-items: center;
+    justify-content:;
+    flex-wrap: wrap;
 	width: 100%;
-
 }
 .checkbox-R,.radio-R{
 	display: flex;
-	width: 100px;
+    justify-content: flex-end;
 	align-items: center;
-	justify-content: flex-end;
 }
-
+.checkbox-L-1{
+    font-size: 20px;
+}
+.checkbox-L-1,.checkbox-L-2,.checkbox-L-3,.checkbox-L-4{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    font-size: 14px;
+}
 .checkbox-1 label,.radio-2 label{
 	width: 100%;
 	display: flex;
@@ -31,29 +37,31 @@
 
 .checkbox__icon {
     position: relative;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     display: inline-block;
     vertical-align: middle;
-    width: 18px;
-    height: 18px;
-    background: blue
+    width: 24px;
+    height: 24px;
+    border:1px #22FF15 solid;
+    background: #999;
 }
 
 .checkbox__icon-checked {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 12px;
-    height: 12px;
-    background: red
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    /*background:red url(././images/dui.svg) 0 50% no-repeat;*/
+    background: #9CFFCD
 }
-
 
 .radio__icon {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     width: 18px;
     height: 18px;
     background: green;
@@ -68,4 +76,13 @@
     height: 12px;
     background: yellow;
     border-radius: 50%;
+}
+
+
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
 }

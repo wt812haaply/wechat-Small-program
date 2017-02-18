@@ -1,3 +1,168 @@
+
+
+<!--点击跳转 Action-->
+<view class="btn-area">
+  <navigator url="../zimu/zimu" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator  url="../leftsilder-del/leftsilder-del" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator url="../zimu/zimu" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+</view>
+<!--点击跳转 End-->
+<!--点击弹出 Action-->
+<view type="default" bindtap="clickbtna">点击</view>  
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>  
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">  
+<!--对话框标题-->  
+  <view class="title-view">  
+    <view class="toast-view">  
+      要显示的内容  
+    </view>  
+  </view>  
+</view>  
+<!--点击弹出 End-->
+
+
+
+<!--对话框 Aciton-->
+<button type="default" bindtap="clickbtnb">  
+  点击  
+</button>  
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>  
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">  
+<!--对话框标题-->  
+<view class="dialog-title">  
+  请输入内容  
+</view>  
+<!--对话框输入部分-->  
+<view class="input-view">  
+  <input type="text" bindblur="input_content" class="input-style"/>  
+</view>  
+<!--对话框按钮-->  
+<view class="line-top">    
+</view>  
+<view class="btn-view">  
+  <view class="btn-cancel" bindtap="click_cancel">    
+          取 消  
+  </view>  
+  <view class="btn-line">  
+  </view>  
+  <view class="btn-cancel" bindtap="click_ok">    
+          确 定  
+  </view>  
+</view>  
+</view>  
+<!--对话框 End-->
+
+
+<!--search Action-->
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+<!--search End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--checkbox-->
+<view class="">
+<view class="">	
+<text class="">checkbox</text>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="checkbox-1" wx:for="{{checkboxItems}}">
+    <label>
+    <view class="checkbox-L">
+      <text class="checkbox-L-1">{{item.value}}</text>
+      <text class="checkbox-L-2">副标题2</text>
+      <text class="checkbox-L-3">内容3</text>
+      <text class="checkbox-L-4">内容4</text>
+      </view>
+
+      <view class="checkbox-R">
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="checkbox__icon">
+        <view class="checkbox__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view> 
+      </view>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+<!--checkbox End-->
+<!--radio-->
+<view class="">	
+<text class="">radio</text>
+<radio-group class="group" bindchange="radioChange">
+  <view class="radio-2" wx:for="{{radioItems}}">
+  <label>
+    <view class="radio-L">
+     {{item.name}}
+      </view>
+      <view class="radio-R">
+       <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}" />
+      <view class="radio__icon">
+        <view class="radio__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      </view>
+    </label>
+  </view>
+  </radio-group>
+  </view>
+
+  </view>
+<!--radio End-->
+
+
+
 <view class="titles">
   <!--绑定事件处理函数bindtap-->
   <!--给选中的组件，即数组当前项的下标与selectedTitle相等的组件，定义样式名titles-selected-->
@@ -19,47 +184,6 @@
 
 
 
-
-
-
-
-<!--checkbox-->
-<view class="none">	
-<text class="">checkbox</text>
-<checkbox-group class="group" bindchange="checkboxChange">
-  <view class="checkbox-1" wx:for="{{checkboxItems}}">
-    <label>
-    <view class="checkbox-L">
-      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
-      <view class="checkbox__icon">
-        <view class="checkbox__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
-      </view>
-      </view>
-
-      <view class="checkbox-R">{{item.value}}</view>
-    </label>
-  </view>
-</checkbox-group>
-</view>
-<!--checkbox End-->
-<!--radio-->
-<view class="none">	
-<text class="">radio</text>
-<radio-group class="group" bindchange="radioChange">
-  <view class="radio-2" wx:for="{{radioItems}}">
-  <label>
-    <view class="radio-L">
-      <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}" />
-      <view class="radio__icon">
-        <view class="radio__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
-      </view>
-      </view>
-      <view class="radio-R">{{item.name}}</view>
-    </label>
-  </view>
-  </radio-group>
-  </view>
-<!--radio End-->
 
 
 <view class="">
@@ -89,7 +213,7 @@
 
 
 <view class="" style="margin-top:100px;">
-<swiper indicator-dots="ture" interval="1500" duration="500" class="">
+<swiper indicator-dots="ture" interval="1500" duration="500" class="swiper-box">
 	<swiper-item>
 		<image src="../../images/1.jpg" class="slide-image" width="" height=""/>
 	</swiper-item>
@@ -109,13 +233,13 @@
 <!--one 1-->
 <view class="one">
 	<view class="one--title">
-		<text class="L">Title</text>
+		<text class="L">11</text>
 		<text class="R">More</text>
 	</view>
 
 	<view class="one--list">
 		<view class="one--list--con">
-			1
+			<image src="../../images/1.jpg" binderror="" bindload="" />
 			<text class="one--list--con--name">Name</text>
 		</view>
 
@@ -140,15 +264,19 @@
 <!--two 2-->
 <view class="two">
 	<view class="two--title">
-		<text class="L">Title</text>
+		<text class="L">22</text>
 		<text class="R">More</text>
 	</view>
 	<view class="two--list">
 		<view class="two--list--con">
 
-			<view class="two--list--con--img">11</view>
+			<view class="two--list--con--img">
+				<image src="../../images/1.jpg" binderror="" bindload="" />
+			</view>
 			<view class="two--list--con--tx">
-				<view class="aoe"></view>
+				<view class="aoe">
+				<image src="../../images/a.jpg" binderror="" bindload="" />
+				</view>
 			</view>	
 			<p>浙江山东矿机风口浪尖了快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗浙江山东矿机风口浪尖了解诶看见拉克丝建档立卡放家里绝对是快乐健康了哦了空卡放家里绝对是快乐健康了哦了空间哦ID开发你看跨境电商洛克菲勒肯德基了离开吗</p>
 		</view>
@@ -185,7 +313,7 @@
 <!--three 3-->
 <view class="three">
 	<view class="three--title">
-		Hello
+		333
 	</view>
 	<view class="three--con">
 		<view class="three--con--list">

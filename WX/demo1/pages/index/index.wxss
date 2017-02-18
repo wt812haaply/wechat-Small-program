@@ -1,15 +1,37 @@
 /*checkbox radio*/
 @import 'checkbox-radio.wxss';
 @import 'tab.wxss';
-
+@import 'searchbar.wxss';
 
 swiper{
-	height: 400rpx;
+	height: 450rpx;
 }
 .slide-image{
 	width: 100%;
-	height: 400rpx;
+	height: 450rpx;
 }
+
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swiper-box .wx-swiper-dot{
+    width:40rpx;
+    display: inline-flex;
+    height: 10rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,0.8);
+    border-radius: 8rpx
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:rgba(244,0,0,0.8);   
+}
+
+
 .none{
 	display: none
 }
@@ -53,22 +75,27 @@ swiper{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 10px
+	padding: 0 10px;
 }
 .one--list--con{
 	width: 46%;
-	height: 300rpx;
-	background: blue;
+	height: 198rpx;
+	background: #FC0014;
 	margin:10px 2%;
 	position: relative;
+}
+.one--list--con image{
+	width: 100%;
+	height: 198rpx;
 }
 .one--list--con--name{
 	position: absolute;
 	bottom:0px;
 	width: 100%;
 	height: 50px;
-	background: green;
+	background: rgba(10,10,55,.5);
 	display: flex;
+	color: #fff;
 	align-items: center;
 	justify-content: center;
 }
@@ -112,8 +139,12 @@ swiper{
 .two--list--con--img{
 	display: flex;
 	width: 100%;
-	height: 300rpx;
+	height: 432rpx;
 	background: blue;
+}
+.two--list--con--img image{
+	width: 100%;
+	height: 432rpx;
 }
 .two--list--con--tx{
 	/*position: relative;
@@ -138,7 +169,11 @@ swiper{
 	height: 100rpx;
 	background: #222;
 	border-radius: 50%;
-
+}
+.aoe image{
+	width: 100%;
+	height:100rpx;
+	border-radius: 50%;
 }
 .two--list--con p{
 	font-size: 12px;
@@ -362,15 +397,17 @@ swiper{
 	justify-content: space-between;
 	display: flex;
 }
+
 .wtq{
 	/*display: flex;*/
 	width: 48%;
+	height: 204rpx;
 	margin:10px 0;
 
 }
 .wtq image{
 	width: 100%;
-	height: 120rpx;
+	height: 204rpx;
 
 }
 .five--con p{
