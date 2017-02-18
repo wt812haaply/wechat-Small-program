@@ -1,0 +1,71 @@
+
+.group{
+	overflow: hidden;
+}
+/*laber*/
+.checkbox-1, .radio-2{
+   height:auto;
+
+   padding:10px 0;
+   margin: 0 10px -1px 10px;
+   border-bottom: 1px red solid;
+   display: flex;
+}
+.checkbox-L,.radio-L{
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+}
+.checkbox-R,.radio-R{
+	display: flex;
+	width: 100px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.checkbox-1 label,.radio-2 label{
+	width: 100%;
+	display: flex;
+}
+
+.checkbox__icon {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: blue
+}
+
+.checkbox__icon-checked {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: red
+}
+
+
+.radio__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: green;
+    border-radius: 50px;
+}
+
+.radio__icon-checked {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background: yellow;
+    border-radius: 50%;
+}

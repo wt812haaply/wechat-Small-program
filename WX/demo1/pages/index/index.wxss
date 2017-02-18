@@ -1,3 +1,8 @@
+/*checkbox radio*/
+@import 'checkbox-radio.wxss';
+@import 'tab.wxss';
+
+
 swiper{
 	height: 400rpx;
 }
@@ -13,6 +18,18 @@ swiper{
 	/*display: flex;*/
 	width: 100%;
 }
+
+
+
+
+.checkbox{
+   display: block;
+   margin: 20px;
+   background: red
+}
+
+
+
 
 .one--title{
 	display: flex;
@@ -432,11 +449,6 @@ swiper{
 	align-items: center;
 	justify-content: center;
 }
-
-
-
-
-
 
 
 
