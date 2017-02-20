@@ -1,30 +1,26 @@
 <!--1-->
 <view class="a" style="height:100px;">1</view>
 
-
-       
-        <view class="search1"> 
-
-            <input class="search-input1" placeholder="这是一个input" bindtap="bindFocus" auto-focus >
-                <icon type="search" size="20" color="purple" class="search-icon inside"/>
-            </input>
-        </view>
-
-   
-    
+<view class="nav-header"> 
+<view class="search"> 
+    <icon type="search" size="20" color="purple" class="search-icon outside"/>
+    <input class="search-input" placeholder="这是一个input" bindtap="bindFocus" auto-focus />
+</view>
+</view>
 
 
-<view class="" style="width:100%; height:auto; background:blue;">
+  
+
+<view class="none" style="width:100%; height:auto; background:blue;">
 <input type="text" placeholder="这里只能输入文本" />
-
 <input type="number" placeholder="这里只能输入纯数字内容" />
-
 <input type="digit" placeholder="这里只能输入可带小数的数字" />
 </view>
+
 <!--点击跳转 Action-->
 <view class="btn-area">
   <navigator url="../zimu/zimu" hover-class="navigator-hover">跳转到新页面</navigator>
-  <navigator  url="../leftsilder-del/leftsilder-del" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
   <navigator url="../zimu/zimu" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
 </view>
 <!--点击跳转 End-->
@@ -72,66 +68,6 @@
 </view>  
 </view>  
 <!--对话框 End-->
-
-
-<!--search Action-->
-    <view class="page__bd">
-        <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-                <view class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-                        <icon type="clear" size="14"></icon>
-                    </view>
-                </view>
-                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-                    <icon class="weui-icon-search" type="search" size="14"></icon>
-                    <view class="weui-search-bar__text">搜索</view>
-                </label>
-            </view>
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
-        </view>
-        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
-                </view>
-            </navigator>
-        </view>
-    </view>
-<!--search End-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--checkbox-->
