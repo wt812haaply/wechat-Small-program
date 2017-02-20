@@ -9,21 +9,21 @@ Page({
     modalHidden:true
   },
   bindInput:function(e){
-     this.setData({
-       inputValue:e.detail.value
-     })
-     console.log('bindInput'+this.data.inputValue)
-  },
-  setSearchStorage:function(){
-    let data;
-    let localStorageValue = [];
-    if(this.data.inputValue != ''){
+   this.setData({
+     inputValue:e.detail.value
+   })
+   console.log('bindInput'+this.data.inputValue)
+ },
+ setSearchStorage:function(){
+  let data;
+  let localStorageValue = [];
+  if(this.data.inputValue != ''){
       //调用API从本地缓存中获取数据
       var searchData = wx.getStorageSync('searchData') || []
       searchData.push(this.data.inputValue)
       wx.setStorageSync('searchData', searchData)
       wx.navigateTo({
-          url: '../result/result'
+        url: '../result/result'
       })
       // console.log('马上就要跳转了！')
     }else{
@@ -32,24 +32,24 @@ Page({
     // this.onLoad();
   },
   modalChangeConfirm:function(){
-      wx.setStorageSync('searchData',[])
-      this.setData({
-        modalHidden:true
-      })
-      wx.redirectTo({
-        url: '../search/search'
-      })
+    wx.setStorageSync('searchData',[])
+    this.setData({
+      modalHidden:true
+    })
+    wx.redirectTo({
+      url: '../search/search'
+    })
       // this.onLoad();
       
-  },
-  modalChangeCancel:function(){
+    },
+    modalChangeCancel:function(){
       this.setData({
         modalHidden:true
       })
-  },
-  clearSearchStorage:function(){
+    },
+    clearSearchStorage:function(){
      this.setData({
-        modalHidden:false
+      modalHidden:false
     })
     // this.onLoad();
   },
@@ -67,7 +67,7 @@ Page({
   onHide:function(){
     console.log('search is onHide')
     wx.redirectTo({
-        url: '../search/search'
+      url: '../search/search'
     })
   },
   bindchange:function(e){
@@ -75,7 +75,7 @@ Page({
   },
   clearInput:function(){
     this.setData({
-       inputValue:''
-     })
+     inputValue:''
+   })
   }
 })
