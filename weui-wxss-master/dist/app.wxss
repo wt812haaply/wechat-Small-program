@@ -25,6 +25,8 @@ page{
     text-align: left;
     font-size: 20px;
     font-weight: 400;
+    height: 2500rpx;
+    color: red;
 }
 
 .page__desc {

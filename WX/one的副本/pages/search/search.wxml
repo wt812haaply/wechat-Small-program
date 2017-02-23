@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<form>
+  <view class="sectionS">
+  <view class="inputContainer">
+      <input class="inputsearch"  style="height:50px;border:1px red solid;background:#fff;" name="input" placeholder="{{placeholder}}" placeholder-style="color:#ff0000;text-align:left;font-size:30rpx" focus="true" bindinput="bindInput"  value="{{inputValue}}" bindfocus="inputfocus" bindblur="inputblur" bindconfirm="formSubmit" />
+
+  </view>
+   <text v-if="{{showText}}" bindtap="searchCancle" class="rightCancle">取消</text> 
+  </view>
+
+  <view class="keyword flexstart">
+    <navigator url="../searchlist/searchlist?word={{item.word}}" wx:for="{{word}}" wx:key="{{index}}" wx:if="{{index<12}}" class="keywordItem" redirect >
+    {{item.word}}
+    </navigator>
+  </view>
+  <view bindtap="formSubmit" class="confirm">确认</view>
+  <view bindtap="searchCancle" class="cancel">取消</view>
+</form>

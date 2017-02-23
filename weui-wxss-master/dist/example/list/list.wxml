@@ -12,11 +12,6 @@
             </view>
         </view>
 
-
-
-
-
-
         <view class="weui-cells__title">带图标、说明的列表项</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">

@@ -1,34 +1,13 @@
-<include src="/mb/mb1" />
-
-
-<import src="/mb/mb1" />
-<template is="n11"/>
-
-<template is="n22"/>
-
-
-<text>{{text}}</text>
-<button>{{btnText}}</button>
-
-
-<view class="content">
-    <view class="item">
-    1
-    </view>
-    <view class="item i3">
-    2
-    </view>
-    <view class="item">
-    3
-    </view>
-    <view class="item">
-    4
-    </view>
-    <view class="item">
-    5 
-    </view>
-
-
-    
-    
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">
+      {{userInfo.nickName}}
+      点击头像开始搜索
+    </text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
 </view>
