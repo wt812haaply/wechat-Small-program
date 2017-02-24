@@ -60,7 +60,6 @@
 
 
 	<view class="test">
-		
 		<view class="" style="width:100%; height:auto; background:blue;">
 		<button type="default" size="default" bindtap="previewImage">previewImage</button>
 
@@ -72,9 +71,13 @@
 
 		<!--点击跳转 Action-->
 		<view class="btn-area">
-			<navigator url="../zimu/zimu" hover-class="navigator-hover">跳转到新页面</navigator>
-			<navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
-			<navigator url="../zimu/zimu" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+			<navigator url="../zimu/zimu" hover-class="navigator-hover">字母表--跳转到新页面</navigator>
+			<navigator url="../swiper-tab/swiper-tab" hover-class="navigator-hover">字母表--跳转到新页面</navigator>
+			<navigator url="../checkbox-radio/checkbox-radio" hover-class="navigator-hover">checkbox-radio--跳转到新页面</navigator>
+
+
+			<navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">左侧滑动删除--在当前页打开</navigator>
+
 		</view>
 		<!--点击跳转 End-->
 	</view>

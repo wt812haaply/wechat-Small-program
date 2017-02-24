@@ -1,0 +1,47 @@
+<!--checkbox-->
+
+<text class="">checkbox</text>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="checkbox-1" wx:for="{{checkboxItems}}">
+    <label>
+    <view class="checkbox-L">
+      <text class="checkbox-L-1">{{item.value}}</text>
+      <text class="checkbox-L-2">副标题2</text>
+      <text class="checkbox-L-3">内容3</text>
+      <text class="checkbox-L-4">内容4</text>
+      </view>
+
+      <view class="checkbox-R">
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="checkbox__icon">
+        <view class="checkbox__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view> 
+      </view>
+    </label>
+  </view>
+</checkbox-group>
+
+<!--checkbox End-->
+
+<!--radio-->
+
+<text class="">radio</text>
+<radio-group class="group" bindchange="radioChange">
+  <view class="radio-2" wx:for="{{radioItems}}">
+  <label>
+    <view class="radio-L">
+     {{item.name}}
+      </view>
+      <view class="radio-R">
+       <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}" />
+      <view class="radio__icon">
+        <view class="radio__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      </view>
+    </label>
+  </view>
+  </radio-group>
+
+
+
+<!--radio End-->
