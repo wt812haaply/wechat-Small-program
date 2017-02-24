@@ -1,0 +1,99 @@
+/**app.wxss**/
+/*/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*初始化class*/ 
+/*浮动*/
+.fl{  float: left;}
+.fr{  float: right;}
+/*清除浮动*/
+.clear{zoom:1;}
+.clear:after{content:""; display:block;clear:both;}
+/*显示位置*/
+.text-center{ text-align: center;}
+/*边距*/
+.padding-t-20{
+ padding-top: 20rpx;
+}
+.padding-b-20{
+  padding-bottom: 20rpx;
+}
+.margin-0-auto{
+margin: 0 auto;
+}
+.margin-t-b-20{
+  margin: 20rpx auto;
+}
+.margin-r-10{
+  margin-right: 10rpx
+}
+/*边框颜色*/
+.border-blue{
+  border: 1rpx solid blue;
+}
+/*宽度*/
+.width-200{
+  width:200rpx;
+}
+
+/*******************引入toast插件的样式*******************/
+@import "src/wetoast.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*******************城市选择器****************************/
+/*地区选择器*/
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citypicker{
+  
+}
+.citybody {
+  position: fixed;
+  bottom: 0px;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}

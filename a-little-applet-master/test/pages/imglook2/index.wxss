@@ -1,0 +1,90 @@
+/**scale.wxss**/
+
+page {
+  background-color: #000;
+  font-size: 28rpx;
+}
+
+::-webket-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.img {
+  width: 750rpx;
+  text-align: center;
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0rpx;
+  right: 0rpx;
+}
+
+.introduce {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin: 0 40rpx 34rpx 40rpx;
+  padding: 25rpx 18rpx;
+}
+
+.footer-bar-box {
+  /*padding: 0 40rpx;*/
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+}
+/*手机*/
+.phone {
+  margin-right: 80rpx;
+}
+
+.footer image {
+  padding-top: 3rpx;
+  width: 55rpx;
+  height: 55rpx;
+}
+
+/*购物车图标*/
+
+.cart {
+  padding-right: 40rpx;
+}
+/*返回*/
+.back{
+  padding-right:40rpx;
+}
+
+/*遮罩*/
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.mask-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask-img image {
+  width: 86rpx;
+  height: 86rpx;
+  text-algin: center;
+  margin: 0 auto;
+}
+
+.mask-word {
+  color: #fff;
+  text-align: center;
+  padding-top: 40rpx;
+}

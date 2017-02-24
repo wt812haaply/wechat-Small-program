@@ -1,0 +1,71 @@
+
+<!--pages/cart/cart.wxml-->
+
+<!--下单页面-->
+<view>
+  <navigator url="../addresslist/addresslist" wx:if="{{length>0}}">
+    <view class="pay-address">
+      <view><image class="cart-address-icon" src="../../images/cartlocation.png"></image></view>
+      <view class="pay-address-word pay-address-sons">
+        <view class="eclipse-2">{{itemAddress.default}}</view>
+        <view class="inline-block margin-r-10">{{itemAddress.getPersonName}}</view><view class="inline-block">{{itemAddress.phone}}</view>
+      </view>
+      <view><image class="cart-address-icon-right" src="../../images/cartright.png"></image></view>
+    </view>
+  </navigator>
+  <view class="pay-add-address" wx:else>
+    <view class="pay-add-address-word">
+    <image class="cart-address-icon"  src="../../images/cartlocation.png"></image>
+    添加收货地址
+    </view>
+    <navigator url="../address/address">
+      <view class=""><image class="cart-address-icon" src="../../images/cartright.png"></image></view>
+    </navigator>
+  </view>
+
+  <!--订单信息-->
+  <view class="order-shop-infor">
+    <!--<view class="order-shop-head">订单信息</view>-->
+
+    <!--订单说明-->
+    <view class="order-shop-introduce">
+      <view class="order-shop-introduce-img">
+        <image src="../../images/delete.png"></image>
+      </view>
+      <view class="order-shop-introduce-word">
+        <view class="order-introduce-title">
+          <text>{{itemList.name}}</text>
+        </view>
+        <view class="order-introduce-tab">{{itemList.author}}/{{itemList.stuff}}/{{itemList.size}}/{{itemList.years}}年</view>
+        <view class="order-introduce-money">￥{{itemList.money}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!--金额-->
+  <view>
+
+    <!--运费-->
+    <view class="money-show">
+   
+    <view class="carriage-money">
+      <view>运费</view>
+      <view>￥{{itemList.carriage}}</view>
+    </view>
+
+    <!--实付款-->
+    <view class="all-money">
+      <view>实付款</view>
+      <view class="true-money">￥{{itemList.moneyAll}}</view>
+    </view>
+  </view>
+   </view>
+
+  <!--微信支付按钮-->
+  <view class="order-btn-pay">
+    <button bindtap="wxpay">微信支付</button>
+  </view>
+
+  <!--一个支付成功的toast-->
+ <toast hidden="{{hiddenToast}}" duration="1000" bindchange="toastHidden" >支付成功</toast>
+</view>

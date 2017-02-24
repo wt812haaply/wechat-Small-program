@@ -1,0 +1,176 @@
+/* pages/cart/cart.wxss */
+
+/* pages/orderpay/orderpay.wxss */
+
+page {
+  background-color: #f2f2f2;
+  font-size: 28rpx;
+}
+
+/****************************************************/
+
+/***********添加收货地址**************************/
+
+.pay-address {
+  width: 750rpx;
+  padding-top: 26rpx;
+  padding-bottom: 24rpx;
+  background-color: #fff;
+  display: flex;
+  align-content: space-between;
+  /*align-items: center !important;*/
+  justify-content: center !important;
+  border-top: 14rpx solid #f2f2f2;
+  font-weight: bold;
+  height: 134rpx;
+  align-items: center;
+}
+
+.pay-address-sons {
+  flex: 4;
+}
+
+/**姓名和手机号**/
+
+.inline-block {
+  display: inline-block;
+}
+
+/*添加收获地址*/
+
+.pay-add-address {
+  width: 710rpx;
+  border-top: 20rpx solid #f2f2f2;
+  background-color: #fff;
+  padding: 20rpx;
+  display: flex;
+  color: #8d8d8d;
+  justify-content: space-between;
+}
+
+/*地址上的图标*/
+
+.cart-address-icon {
+  width: 37rpx;
+  height: 37rpx;
+  display: inline-block;
+  margin-right: 24rpx;
+  margin-left: 41rpx;
+}
+
+.cart-address-icon-right {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 24rpx;
+}
+
+/****************************************************/
+
+/****************订单信息************************/
+
+.order-shop-infor {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 40rpx 0 0 40rpx;
+  border-top: 2rpx solid #e3e3e3;
+}
+
+/***************订单信息提示*****************/
+
+/*.order-shop-head{
+    font-size: 30rpx;
+    color: #999;
+}*/
+
+/***************订单介绍******************/
+
+.order-shop-introduce {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40rpx;
+  border-bottom: 2rpx solid #e3e3e3;
+}
+
+.order-shop-introduce-img {
+  overflow: hidden;
+  margin-right: 20rpx;
+  width: 182rpx;
+  height: 192rpx;
+  box-shadow: 0 0 50rpx #bdbeb3;
+  border-radius: 26rpx;
+}
+
+/***************订单的图片***************/
+
+.order-shop-introduce-img image {
+  width: 182rpx;
+  height: 192rpx;
+}
+
+/***************订单的详细介绍**********/
+
+.order-shop-introduce-word {
+  height: 192rpx;
+  flex: 1;
+}
+
+/***************商品的名称简介**********/
+
+.order-shop-introduce-word .order-introduce-title {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 70rpx;
+}
+
+.order-introduce-title, .order-introduce-money {
+  font-weight: bold;
+}
+
+.order-introduce-tab {
+  color: #8e8e8e;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 70rpx;
+}
+
+/***************金钱*************************/
+
+/*运费**实付款*/
+
+.money-show {
+  background-color: #fff;
+  padding-left: 40rpx;
+}
+
+.carriage-money, .all-money {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #e4e4e4;
+  height: 120rpx;
+  line-height: 120rpx;
+  padding-right: 40rpx;
+  color: #8e8e8e;
+}
+
+.true-money {
+  color: #f94848;
+}
+
+/***************支付按钮*******************/
+
+.order-btn-pay button {
+  font-size: 36rpx;
+  width: 470rpx;
+  margin: 104rpx auto 0;
+  border-radius: 50rpx;
+  background-color: #f94848;
+  color: #fff;
+  box-shadow: 0 2rpx 24rpx #f94848;
+}
+

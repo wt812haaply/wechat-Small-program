@@ -1,0 +1,51 @@
+/* pages/imglook/imglook.wxss */
+/* pages/imglook/imglook.wxss */
+/*.imgBox{
+    width:750rpx;    
+    text-align: center;
+}*/
+page{
+    text-align: center;
+background-color: #000;
+overflow: hidden;
+}
+.img image {
+padding-top: 0; 
+position: relative;
+}
+.scalenum{
+
+    color:#fff;position:absolute;top:10rpx;z-index:1;width:750rpx;
+}
+
+/*文字说明*/
+.img-deriction{
+    position: absolute;
+    bottom: 60px;   
+    margin: 30rpx;
+    width: 660rpx;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20rpx 0;
+    text-align: left;
+}
+/*艺术品文字*/
+.img-deriction{
+padding-top: 10rpx;
+padding-bottom:10rpx;
+font-size: 32rpx;
+padding-left: 30rpx;
+font-family: Helvetica;
+}
+/*底部导航*/
+.deriction-footer-bar{
+    width: 750rpx;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding:20rpx 0;
+    color: #fff; 
+}
+.deriction-footer-bar navigator{
+    display: inline-block;
+}
