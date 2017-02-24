@@ -1,5 +1,0 @@
-@import 'wei-ui.wxss';
-.none{
-	display: none;
-}
-
