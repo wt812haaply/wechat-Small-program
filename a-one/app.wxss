@@ -94,9 +94,12 @@ page{
 
 /*配置公用组件的样式*/
 /*搜索条目的样式*/
+.rightCancle{
+  position: relative;right: 17rpx; z-index: 9; top: 40rpx; height: 70rpx; line-height: 70rpx; background: blue; text-align: center; width: 120rpx; color: red; float: right;
+}
 .sectionS{
-  height:120rpx;
-  background:#ff0000;
+  height:150rpx;
+  background:#555;
 }
 .inputContainer{
   width:100%;
@@ -104,28 +107,32 @@ page{
 }
 .inputsearch{
   position:absolute;
-  padding:0 90rpx;
+  /*padding:0 90rpx;*/
   display:block;
   background:#fff;
   color:#3d4245;
-  width:516rpx;
-  height:60rpx;
-  line-height:60rpx;
-  border-radius:30rpx;
-  top:30rpx;
-  left:117rpx;
+  /*width:616rpx;*/
+  height:70rpx;
+  line-height:70rpx;
+  /*border-radius:;*/
+  top:40rpx;
+  left:17rpx;
+  right: 17rpx;
+  padding-left: 12px;
   box-sizing:border-box;
   z-index:2;
 }
 .inputContainer .mark{
    position:absolute;
-  padding:0 90rpx;
+  /*padding:0 90rpx;*/
   display:block;
-  width:516rpx;
-  height:60rpx;
-  border-radius:30rpx;
-  top:30rpx;
-  left:117rpx;
+  /*width:616rpx;*/
+  height:70rpx;
+  line-height: 70rpx;
+  /*border-radius:30rpx;*/
+  top:40rpx;
+  left:17rpx;
+  right: 17rpx;
   box-sizing:border-box;
   z-index:2;
 }

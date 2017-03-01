@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<text type="default" bindtap="clickbtn" style="height:50px; display: flex; margin-top:30px">点击</text>
+
+
+
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<!--对话框标题-->
+<view class="dialog-title">
+  请输入正确的密码
+</view>
+<!--对话框输入部分-->
+<view>
+  <input type="text" bindblur="input_content" class="input-style"/>
+  <wview class="awb" style="height:200px;display:flex; background:#eee">dfdfee</wview>
+</view>
+<!--对话框按钮-->
+<!-- <view class="line-top"></view> -->
+<view class="btn-view">
+  <view class="btn-cancel btn-cancel-b" bindtap="click_cancel">取消</view>
+  <!-- <view class="btn-line"></view> -->
+  <view class="btn-cancel" bindtap="click_ok">确定</view>
+  
+</view>
+  
+</view>

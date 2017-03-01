@@ -4,7 +4,8 @@
     "pages/zimu/zimu",
     "pages/leftsilderdel/leftsilderdel",
     "pages/checkbox-radio/checkbox-radio",
-    "pages/swiper-tab/swiper-tab",    
+    "pages/swiper-tab/swiper-tab",
+    "pages/modaltest/modaltest",    
     "pages/search/search"
   ],
   "window":{

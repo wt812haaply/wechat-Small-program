@@ -1,9 +1,5 @@
 <!--about.wxml-->
 <template name="snackbar">
-
-
-
-
 	<view  class="{{snackEnable ? 'snack-bar':'snack-bar-hide'}}" style="{{style_snackbar}}" animation="{{animationData}}">
 		<view  class="snack-title snack-text" >
 			{{snack_title}}
@@ -13,6 +9,4 @@
 			{{snack_action}}
 		</view>
 	</view>
-
-
 	</template>
