@@ -44,8 +44,9 @@ page {
 }
 
 .sc-conList {
-  width: 18%;
-  padding: 1%;
+  width: 20%;
+  padding: 0;
+  margin:0 10rpx;
   height: 150rpx;
   display: inline-block;
 }
