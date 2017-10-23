@@ -4,7 +4,7 @@
     <image src='../../images/ycloset_logo.png'></image>
   </view>
   <view class="search-top">
-    <input placeholder='搜索商品'></input>
+    <input placeholder-class="psection" maxlength="10" placeholder='搜索商品'></input>
   </view>
 </view>
 
