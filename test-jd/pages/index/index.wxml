@@ -46,11 +46,27 @@
  <image src='../../images/icon/b-1.png'></image>
   <view>1111</view>
  </view>
-
-<!--  
- <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
- <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
- <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
--->
 </scroll-view> 
+</view>
+
+<view class="content">
+  <view class="con-title">秒杀哦</view>
+  <view class="" style="height:40px; background:red; text-align:center;">1</view>
+
+  <view class="con-time">
+    <view>距本场结束</view>
+    <view>0 0 0 0 0</view>
+  </view>
+
+  <view class="con-content">
+    <view class="con-content-L">
+    <image src='../../images/icon/a-1.png'></image>
+    </view>
+    <view class="con-content-R">
+    <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
+    <view class="h3">￥11.1111 <view class="h33">￥111.11</view></view>
+    <view class="h4">3333333</view>
+    <view class='h5'><button bindtap="setDisabled">1111</button></view>
+    </view>
+  </view>
 </view>

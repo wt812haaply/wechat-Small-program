@@ -57,8 +57,82 @@ page {
   width: 100%;
   height: 150rpx;
 }
+.content{
+  width: 100%;
+  background: #999
+}
+.con-title,.con-time{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.con-time{
+  width: 100%;
+  display: flex;
+  height: 100px;
+  background: red;
+  flex-wrap: wrap;
+}
+.con-time view{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
-/* .one{background: red; }
-.two{background: yellow;}
-.three{background: green;}
-.four{background: #333;} */
+.con-content{
+  display: flex;
+  width: 100%;
+}
+.con-content-L{
+  width: 200rpx;
+  height: 200rpx;
+  background: green;
+  display: flex; 
+}
+.con-content-L image{
+  width: 100%;
+  height: 200rpx;
+}
+.con-content-R{
+  width: 550rpx; 
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.h2,
+.h3,
+.h4
+{
+width:100%;
+display:flex;
+justify-content:flex-start;
+align-content:center;
+font-size: 12px;
+}
+.h33{
+  color: red;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+.h2{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;  /*2行*/
+overflow: hidden;
+}
+
+.h5 button{
+  height: 40rpx;
+  line-height: 40rpx;
+  background: red;
+  border:0px red solid;
+  border-radius: 0px;
+}
+
+
+
+
+
