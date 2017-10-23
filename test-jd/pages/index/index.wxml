@@ -10,43 +10,43 @@
 
 <view style='padding: 0 10px; background:pink'>
   <scroll-view scroll-x="true" class="sc-con">
-<!-- display: inline-block-->
- <view class="sc-conList one">
- <image src='../../images/icon/a-1.png'></image>
- <view>1111</view>
- </view>
- <view class="sc-conList two">
- <image src='../../images/icon/b-1.png'></image>
-  <view>1111</view>
- </view>
+    <!-- display: inline-block-->
+    <view class="sc-conList one">
+      <image src='../../images/icon/a-1.png'></image>
+      <view>1111</view>
+    </view>
+    <view class="sc-conList two">
+      <image src='../../images/icon/b-1.png'></image>
+      <view>1111</view>
+    </view>
 
-  <view class="sc-conList one">
- <image src='../../images/icon/a-1.png'></image>
-  <view>1111</view>
- </view>
- <view class="sc-conList two">
- <image src='../../images/icon/b-1.png'></image>
-  <view>1111</view>
- </view>
+    <view class="sc-conList one">
+      <image src='../../images/icon/a-1.png'></image>
+      <view>1111</view>
+    </view>
+    <view class="sc-conList two">
+      <image src='../../images/icon/b-1.png'></image>
+      <view>1111</view>
+    </view>
 
-  <view class="sc-conList one">
- <image src='../../images/icon/a-1.png'></image>
-  <view>1111</view>
- </view>
- <view class="sc-conList two">
- <image src='../../images/icon/b-1.png'></image>
-  <view>1111</view>
- </view>
+    <view class="sc-conList one">
+      <image src='../../images/icon/a-1.png'></image>
+      <view>1111</view>
+    </view>
+    <view class="sc-conList two">
+      <image src='../../images/icon/b-1.png'></image>
+      <view>1111</view>
+    </view>
 
-  <view class="sc-conList one">
- <image src='../../images/icon/a-1.png'></image>
-  <view>1111</view>
- </view>
- <view class="sc-conList two">
- <image src='../../images/icon/b-1.png'></image>
-  <view>1111</view>
- </view>
-</scroll-view> 
+    <view class="sc-conList one">
+      <image src='../../images/icon/a-1.png'></image>
+      <view>1111</view>
+    </view>
+    <view class="sc-conList two">
+      <image src='../../images/icon/b-1.png'></image>
+      <view>1111</view>
+    </view>
+  </scroll-view>
 </view>
 
 <view class="content">
@@ -58,15 +58,71 @@
     <view>0 0 0 0 0</view>
   </view>
 
-  <view class="con-content">
-    <view class="con-content-L">
-    <image src='../../images/icon/a-1.png'></image>
+  <view style='padding:20px;'>
+    <view class="con-content">
+      <view class="con-content-L">
+        <image src='../../images/icon/a-1.png'></image>
+      </view>
+      <view class="con-content-R">
+        <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
+        <view class="h3">￥11.1111
+          <view class="h33">￥111.11</view>
+        </view>
+        <view class="h4">3333333</view>
+        <view class='h5'>
+          <button bindtap="setDisabled">1111</button>
+        </view>
+      </view>
     </view>
-    <view class="con-content-R">
-    <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
-    <view class="h3">￥11.1111 <view class="h33">￥111.11</view></view>
-    <view class="h4">3333333</view>
-    <view class='h5'><button bindtap="setDisabled">1111</button></view>
+
+
+    <view class="con-content">
+      <view class="con-content-L">
+        <image src='../../images/icon/a-1.png'></image>
+      </view>
+      <view class="con-content-R">
+        <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
+        <view class="h3">￥11.1111
+          <view class="h33">￥111.11</view>
+        </view>
+        <view class="h4">3333333</view>
+        <view class='h5'>
+          <button bindtap="setDisabled">1111</button>
+        </view>
+      </view>
+    </view>
+
+    <view class="con-content">
+      <view class="con-content-L">
+        <image src='../../images/icon/a-1.png'></image>
+      </view>
+      <view class="con-content-R">
+        <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
+        <view class="h3">￥11.1111
+          <view class="h33">￥111.11</view>
+        </view>
+        <view class="h4">3333333</view>
+        <view class='h5'>
+          <button bindtap="setDisabled">1111</button>
+        </view>
+      </view>
+    </view>
+
+    <view class="con-content">
+      <view class="con-content-L">
+        <view class='woc'>111</view>
+        <image src='../../images/icon/a-1.png'></image>
+      </view>
+      <view class="con-content-R">
+        <view class="h2">橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣橙色马海毛高领毛衣</view>
+        <view class="h3">￥11.1111
+          <view class="h33">￥111.11</view>
+        </view>
+        <view class="h4">3333333</view>
+        <view class='h5'>
+          <button bindtap="setDisabled">1111</button>
+        </view>
+      </view>
     </view>
   </view>
 </view>
