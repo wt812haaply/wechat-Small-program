@@ -135,7 +135,7 @@ font-size: 12px;
   font-size: 20px;
    height: 25px; 
    display: flex;
-    background: #999;  
+    /* background: #999;   */
 }
 .h33{
   color: red;
