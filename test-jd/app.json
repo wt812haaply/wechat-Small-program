@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "page/test2/test2",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "yes",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/a-1.png",
+        "selectedIconPath": "images/icon/a-2.png",
+        "text": "test1"
+      },
+      {
+        "pagePath": "pages/test2/test2",
+        "iconPath": "images/icon/b-1.png",
+        "selectedIconPath": "images/icon/b-2.png",
+        "text": "test2"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+
+}

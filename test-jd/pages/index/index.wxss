@@ -1,0 +1,64 @@
+page {
+  background: #eee;
+}
+
+.top {
+  height: auto;
+  background: #ff544b;
+  padding: 40rpx 20rpx;
+}
+
+.logo-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo-top image {
+  width: 288rpx;
+  height: 80rpx;
+}
+
+.search-top input {
+  height: 36rpx;
+  border-radius: 30px;
+  background: #fff;
+  padding: 10rpx;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40rpx;
+}
+
+.sc-con {
+  white-space: nowrap;
+  display: flex;
+  display: block;
+  height: auto;
+  padding:10px 0;
+  margin-top: 20rpx;
+}
+
+.sc-conList {
+  width: 18%;
+  padding: 1%;
+  height: 150rpx;
+  display: inline-block;
+}
+
+.sc-conList view {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.sc-conList image {
+  width: 100%;
+  height: 150rpx;
+}
+
+/* .one{background: red; }
+.two{background: yellow;}
+.three{background: green;}
+.four{background: #333;} */

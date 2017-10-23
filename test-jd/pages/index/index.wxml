@@ -1,0 +1,56 @@
+<!-- logo -->
+<view class="top">
+  <view class="logo-top">
+    <image src='../../images/ycloset_logo.png'></image>
+  </view>
+  <view class="search-top">
+    <input placeholder='搜索商品'></input>
+  </view>
+</view>
+
+<view style='padding: 0 10px; background:pink'>
+  <scroll-view scroll-x="true" class="sc-con">
+<!-- display: inline-block-->
+ <view class="sc-conList one">
+ <image src='../../images/icon/a-1.png'></image>
+ <view>1111</view>
+ </view>
+ <view class="sc-conList two">
+ <image src='../../images/icon/b-1.png'></image>
+  <view>1111</view>
+ </view>
+
+  <view class="sc-conList one">
+ <image src='../../images/icon/a-1.png'></image>
+  <view>1111</view>
+ </view>
+ <view class="sc-conList two">
+ <image src='../../images/icon/b-1.png'></image>
+  <view>1111</view>
+ </view>
+
+  <view class="sc-conList one">
+ <image src='../../images/icon/a-1.png'></image>
+  <view>1111</view>
+ </view>
+ <view class="sc-conList two">
+ <image src='../../images/icon/b-1.png'></image>
+  <view>1111</view>
+ </view>
+
+  <view class="sc-conList one">
+ <image src='../../images/icon/a-1.png'></image>
+  <view>1111</view>
+ </view>
+ <view class="sc-conList two">
+ <image src='../../images/icon/b-1.png'></image>
+  <view>1111</view>
+ </view>
+
+<!--  
+ <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+ <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+ <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+-->
+</scroll-view> 
+</view>

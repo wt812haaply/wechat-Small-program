@@ -4,29 +4,7 @@
 <!--第一个搜索组件-->
   <template is="search" data="{{src:src,inputValue:inputValue}}"></template>
 <!--头部导航组件-->
-
 </scroll-view>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -35,17 +13,12 @@
 <view><!--content-->
 	<view class="top-swiper">
 		<swiper indicator-dots="true" autoplay="true" interval="1500" duration="500" class="swiper-box">
-
 			<swiper-item>
 				<image src="../../images/1.jpg" class="slide-image" width="" height=""/>
 			</swiper-item>
 			<swiper-item>
 				<image src="../../images/2.jpg" class="slide-image" width="" height=""/>
 			</swiper-item>
-			<swiper-item>
-				<image src="../../images/3.jpg" class="slide-image" width="" height=""/>
-			</swiper-item>
-
 		</swiper>	
 		<view class="dots">
 			<block wx:for="{{slider}}" wx:key="unique">
@@ -184,7 +157,6 @@
 			</view>
 		</view>
 	</view>
-
 
 
 
