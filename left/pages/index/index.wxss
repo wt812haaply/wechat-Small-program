@@ -1,0 +1,37 @@
+/**index.wxss**/
+.body{
+  display: flex;
+}
+.left,.right{
+  height: 99vh;
+   
+}
+.left{
+  flex: 1;
+ background-color: whitesmoke;
+}
+
+.right{
+  flex: 2;
+ 
+}
+.rightview,.leftview{
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  text-align: center;
+
+}
+.leftview{
+  height: 100rpx;
+    line-height: 100rpx;
+}
+.rightview{
+height: 148rpx;
+line-height: 148rpx;
+border-left:none !important; 
+}
+.clickview{
+  border-right: none !important;
+  background-color: cornflowerblue;
+  color: white;
+}
