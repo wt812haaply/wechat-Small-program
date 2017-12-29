@@ -13,7 +13,7 @@
 <view class="nav-header"> 
 <view class="search"> 
     <icon type="search" size="20" color="purple" class="search-icon outside"/>
-    <input class="search-input" placeholder="这是一个input" bindtap="bindFocus" auto-focus />
+    <input class="search-input" placeholder="这是一个search" bindtap="bindFocus" auto-focus />
 </view>
 </view>
 
@@ -28,8 +28,8 @@
 
 <!--点击跳转 Action-->
 <view class="btn-area">
-  <navigator url="../zimu/zimu" hover-class="navigator-hover">跳转到新页面</navigator>
-  <navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator url="../zimu/zimu" hover-class="navigator-hover">跳转新页面（城市筛选）</navigator>
+  <navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">当前页打开（滑动删除）</navigator>
   <navigator url="../zimu/zimu" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
 </view>
 <!--点击跳转 End-->

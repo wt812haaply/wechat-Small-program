@@ -1,0 +1,12 @@
+
+
+<!--点击跳转 Action-->
+
+	<navigator url="../zimu/zimu" hover-class="navigator-hover">字母表--跳转到新页面</navigator>
+	<!-- <navigator url="../swiper-tab/swiper-tab" hover-class="navigator-hover">SwiperTab--跳转到新页面</navigator>
+	<navigator url="../modaltest/modaltest" hover-class="navigator-hover">modaltest--跳转到新页面</navigator>
+	<navigator url="../checkbox-radio/checkbox-radio" hover-class="navigator-hover">checkbox-radio--跳转到新页面</navigator>
+	<navigator  url="../leftsilderdel/leftsilderdel" open-type="redirect" hover-class="other-navigator-hover">左侧滑动删除--在当前页打开</navigator> -->
+
+<!--点击跳转 End-->
+

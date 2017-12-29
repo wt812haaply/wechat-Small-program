@@ -2,7 +2,7 @@
 <form>
   <view class="sectionS">
     <view class="inputContainer">
-      <input class="inputsearch" name="input" placeholder="{{placeholder}}" placeholder-style="color:#ff0000;text-align:left;font-size:30rpx" focus="true" bindinput="bindInput"  value="{{inputValue}}" bindfocus="inputfocus" bindblur="inputblur" bindconfirm="formSubmit" />
+      <input class="inputsearch" name="input" placeholder="反间谍法累死了开发脚手架六块腹肌" placeholder-style="color:#ff0000;text-align:left;font-size:30rpx" focus="true" bindinput="bindInput"  value="{{inputValue}}" bindfocus="inputfocus" bindblur="inputblur" bindconfirm="formSubmit" />
     </view>
     <text v-if="{{showText}}" bindtap="searchCancle" class="rightCancle">取消</text> 
   </view>

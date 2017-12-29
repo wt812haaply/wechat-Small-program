@@ -1,16 +1,16 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/test2/test2",
-    "pages/logs/logs"
+    "pages/zimu/zimu"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "yes",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "C2",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
+
+   "tabBar": {
     "color": "#000000",
     "selectedColor": "#000000",
     "backgroundColor": "#ffffff",
@@ -20,13 +20,13 @@
         "pagePath": "pages/index/index",
         "iconPath": "images/icon/a-1.png",
         "selectedIconPath": "images/icon/a-2.png",
-        "text": "test1"
+        "text": "收藏"
       },
       {
-        "pagePath": "pages/test2/test2",
+        "pagePath": "pages/index-fb/index",
         "iconPath": "images/icon/b-1.png",
         "selectedIconPath": "images/icon/b-2.png",
-        "text": "test2"
+        "text": "wechat"
       }
     ]
   },
@@ -36,4 +36,6 @@
   },
   "debug": false
 
+
+  
 }
