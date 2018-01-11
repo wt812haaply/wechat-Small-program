@@ -1,0 +1,70 @@
+
+<view class="container chat">
+  <view class="chat-item rank1 flex-wrp">
+    <view class="avatar flex-item">
+      <image src="../../images/rank/num1.png"></image>
+    </view>
+    <view class="chat-content flex-iterankm">
+      <view class="chat-source">
+        <text class="chatmate">Alex</text>
+        <text class="lasttime">5800分</text>
+      </view>
+      <text class="chat-txt">你好~ 你好~ 你好~</text>
+    </view>
+  </view>
+
+  <view class="chat-item rank2 flex-wrp">
+    <view class="avatar flex-item">
+      <image src="../../images/icon9.jpeg"></image>
+    </view>
+    <view class="chat-content flex-item">
+      <view class="chat-source">
+        <text class="chatmate">George</text>
+        <text class="lasttime">4600分</text>
+      </view>
+      <text class="chat-txt">你好~ 你好~ 你好~</text>
+    </view>
+  </view>
+
+  <view class="chat-item rank3 flex-wrp">
+    <view class="avatar flex-item">
+      <image src="../../images/rank/num1.png"></image>
+    </view>
+    <view class="chat-content flex-iterankm">
+      <view class="chat-source">
+        <text class="chatmate">Alex</text>
+        <text class="lasttime">4300分</text>
+      </view>
+      <text class="chat-txt">你好~ 你好~ 你好~</text>
+    </view>
+  </view>
+
+<block wx:for="{{rankList}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+  <view class="chat-item flex-wrp">
+    <view class="avatar flex-item">
+      <image src="../../images/rank/num1.png"></image>
+    </view>
+    <view class="chat-content flex-iterankm">
+      <view class="chat-source">
+        <text class="chatmate">{{item.name}}</text>
+        <text class="lasttime">{{item.total}}</text>
+      </view>
+      <text class="chat-txt">{{item.mtto}}</text>
+    </view>
+  </view>
+</block>
+
+
+<view class="page-txt">
+第1页 &gt;&gt;10/36 &gt;共4页
+</view>
+
+ 
+
+  
+
+</view>
+
+
+
+

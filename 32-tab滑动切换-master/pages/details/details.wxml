@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="details-container">
+    <view class="details-title">
+      <text>{{item.title}}</text>
+    </view>
+    <view class="info">
+      <view class="view-count">阅读数：{{item.viewsCount}}</view>
+      <view class="user-info">
+      
+      <text class="author">by：{{item.user.username}}</text>
+      <image src="{{item.user.avatar_large}}" class="avatar"></image>
+      </view>
+    </view>
+    <image class="time-card {{item.screenshot ? 'has-img' : 'no-img'}}" mode="aspectFill" src="{{item.screenshot.url}}"></image>
+    <view class="tags">分类：{{item.tagsTitleArray}}</view>
+    <view class="details-content">
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+</view>

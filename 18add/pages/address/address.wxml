@@ -1,0 +1,36 @@
+<view class="content">
+  <view class="content-box">
+    <view class="input-personal">
+      <view>
+        姓名：
+      </view>
+      <input type="text" bindblur="bindblurname" placeholder="请输入姓名" />
+    </view>
+   
+   
+     <view class="city">
+      <view class="city-name">地址：</view>
+      <view class="city-lists">
+      <import src="../../templates/address-temp"/>
+
+
+
+
+      
+      <template is="addressPicker" data="{{provinceIndex:city.provinceIndex,cityIndex:city.cityIndex,districtIndex:city.districtIndex,province:city.province,city:city.city[city.selectedProvince],district:city.district[city.selectedCity]}}"/>
+      </view> 
+    </view>
+
+
+
+
+    
+
+
+  </view>
+  <!--<navigator url="../gathering/gathering" hover-class="navigator-hover">-->
+  <view class="btn-address" >
+    <button type="primary" bindtap="hasAddress">确定</button>
+  </view>
+   <!--</navigator>-->
+</view>

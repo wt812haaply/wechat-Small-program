@@ -1,0 +1,19 @@
+<view class="page">
+
+  <!-- 加载提示 -->
+  <view class="loadTips">{{loadTips}}</view>
+
+  <!-- 小图 -->
+  <view class="images" wx:if="{{images.length}}" bindtap="show">
+    <image wx:for="{{images}}" wx:key="id" data-id="{{item.id}}" src="{{item.smallSrc}}"></image>
+  </view>
+
+  <!-- 轮播图 -->
+  <view class="slideshow" hidden="{{!slideshow}}" bindtap="hide">
+    <swiper indicator-dots="true" current="{{selectedId}}">
+      <swiper-item wx:for="{{images}}" wx:key="id">
+        <image src="{{item.bigSrc}}" class="slide-image" />
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

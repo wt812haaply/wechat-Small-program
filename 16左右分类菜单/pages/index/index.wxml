@@ -1,0 +1,14 @@
+
+<!--index.wxml-->
+<view class="body">
+  <scroll-view class="left" scroll-y="true">
+    <view wx:for="{{leftdata}}" class="leftview {{index==linheightid?'clickview':''}}" id="{{index}}" bindtap="clickbtn" >{{item}}</view>
+  </scroll-view>
+  <scroll-view class="right" scroll-y="true" scroll-into-view="{{intoid}}" bindscroll="{{scroll}}">
+    <view wx:for="{{rightdata}}" wx:for-item="classify"  id="id{{index}}" >
+      <view class="rightview" wx:for="{{classify}}" wx:for-item="menu" wx:key="name" >
+        {{menu.nama}}
+      </view>
+    </view>
+  </scroll-view>
+</view>

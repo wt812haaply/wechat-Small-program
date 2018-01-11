@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/details/details",
+    "pages/music/music",
+    "pages/user/user",
+    "pages/discover/discover",
+    "pages/more/more",
+    "pages/scroll/scroll"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4FBECC",
+    "navigationBarTitleText": "三好学生"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#4FBECC",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "资讯",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_focus.png"
+    },{
+      "pagePath": "pages/music/music",
+      "text": "娱乐",
+      "iconPath": "images/ring.png",
+      "selectedIconPath": "images/ring_focus.png"
+    },{
+      "pagePath": "pages/discover/discover",
+      "text": "发现",
+      "iconPath": "images/discovery.png",
+      "selectedIconPath": "images/discovery_focus.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我",
+      "iconPath": "images/burger.png",
+      "selectedIconPath": "images/burger_focus.png"
+    },
+    {
+      "pagePath": "pages/more/more",
+      "text": "更多",
+      "iconPath": "images/burger.png",
+      "selectedIconPath": "images/burger_focus.png"
+    }]
+  }
+}
