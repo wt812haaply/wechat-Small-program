@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="time-container">
+  <view class="time-card {{item.screenshot ? 'has-img' : 'no-img'}}" wx:for-index="itemIndex"  wx:for="{{timeLine}}">
+      <navigator url="../details/details?index={{itemIndex}}">
+        <view class="time-card-img-box" wx:if="{{item.screenshot}}">
+          <image class="time-card-img" style="width: 750rpx; height: 400rpx; background-color: #eeeeee;" mode="aspectFill" src="{{item.screenshot.url}}"></image>
+        </view>
+      </navigator>
+      <view  class="time-card-cotent-box">
+        <view class="time-card-top">
+          <navigator url="../details/details?index={{itemIndex}}">
+            <view class="time-card-title">
+              <text class="time-card-title-text">{{item.title}}</text>
+            </view>
+          </navigator>
+          <view class="time-card-avatar-box">
+            <image src="{{item.user.avatar_large}}" class="time-card-avatar"></image>
+          </view>
+          </view>
+          <view class="time-card-bottom" data-index="{{itemIndex}}" bindtap="touchdetails">
+            <view class="time-card-tags">
+              <text class="time-card-tag" wx:for="{{item.tagsTitleArray}}" wx:for-index="tagIndex" wx:for-item="tag" wx:if="{{tagIndex < 3}}">分类：{{tag}}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

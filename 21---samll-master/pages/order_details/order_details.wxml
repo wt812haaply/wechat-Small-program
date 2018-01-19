@@ -1,0 +1,87 @@
+<view class="block top">
+  <text>订单状态</text>
+  <text class="top_r">{{info.tips}}</text>
+</view>
+<view class="block masterInfoCon display-box-h box-align-center" wx:if="{{info.status == 2}}">
+  <view class="headerImgCon">
+    <image src="{{info.headImg}}"></image>
+  </view>
+  <view class="flex-one masterInfo">
+    <view class="masterInfo_top">维修工程师：{{info.name}}</view>
+    <view class="masterInfo_tip">已维修{{info.orderNum}}单</view>
+  </view>
+  <view class="masterPhone" data-phone="{{info.phone}}" catchtap="tel">
+    <image src="../../images/phone_icon.png"></image>
+  </view>
+</view>
+<view class="block serverInfoCon">
+  <view class="serverInfo_contact border_b clearfix">
+    <view class="row_l">联系人</view>
+    <view class="row_r">{{info.nickName}} {{info.orderPhone}}</view>
+  </view>
+  <view class="serverInfo_address border_b clearfix">
+    <view class="row_l">服务地址</view>
+    <view class="row_r">{{info.province}}{{info.city}}{{info.district}}{{info.orderAddr}}</view>
+  </view>
+  <view class="server_time clearfix">
+    <view class="row_l">服务时间</view>
+    <view class="row_r">{{info.orderTime}}</view>
+  </view>
+</view>
+<view class="block">
+  <view class="title">
+    <text>{{info.phoneBrand}}</text>
+    <text>{{info.phoneModel}}</text>
+    <text>{{info.colorName}}</text>
+  </view>
+  <view class="defalutCon">
+    <view class="defalutCon_row clearfix" wx:for="{{info.Failurelist}}" wx:key="{{index}}" wx:for-item="jtem">
+      <text>{{jtem.desc}}</text>
+      <text class="defalutCon_row_r">￥{{jtem.grade}}</text>
+    </view>
+  </view>
+  <view class="defalutImgCon">
+    <image src="{{ktem}}" bindtap="previewImage" data-url="{{ktem}}" wx:for="{{info.userUploadImgs}}" wx:key="{{index}}" wx:for-item="ktem"></image>
+  </view>
+</view>
+<view class="block youCon">
+  <text>优惠</text>
+  <text class="youCon_text">{{info.couponName}}</text>
+</view>
+<view class="block priceCon">
+  <view>
+    <text>维修价格</text>
+    <text class="priceCon_r">￥{{info.totalPrice}}</text>
+  </view>
+  <view>
+    <text>优惠</text>
+    <text class="priceCon_r">-￥{{info.couponPrice}}</text>
+  </view>
+  <view>
+    <text>预计需支付</text>
+    <text class="priceCon_r">￥{{info.totalPrice - info.couponPrice}}</text>
+  </view>
+  <view class="priceCon_tip">
+    维修总价为预计费用，价格以最终维修方案为准
+  </view>
+</view>
+<view class="block leaveWord clearfix">
+  <text class="row_l">留言</text>
+  <text class="row_r">{{info.desc}}</text>
+</view>
+<view class="block orderInfo">
+  <view class="clearfix">
+    <text class="row_l">订单编号</text>
+    <text class="row_r">{{info.orderSn}}</text>
+  </view>
+  <view class="clearfix">
+    <text class="row_l">下单时间</text>
+    <text class="row_r">{{info.addTime}}</text>
+  </view>
+</view>
+<view class="payCon clearfix">
+  <text hidden="{{info.status == 2 ? false : true}}" data-orderid="{{info.orderID}}" catchtap="backRepair">返修</text>
+  <text hidden="{{info.status == 2 && info.isComment == 0 ? false : true}}" data-orderid="{{info.orderID}}" data-masterid="{{info.masterID}}" catchtap="appraise">评价</text>
+  <text hidden="{{info.status == 0 ? false : true}}" data-orderid="{{info.orderID}}" catchtap="cancelOrder">取消订单</text>
+  <text class="pay" hidden="{{info.status == 0 ? false : true}}" data-orderid="{{info.orderID}}" catchtap="pay">付款</text>
+</view>

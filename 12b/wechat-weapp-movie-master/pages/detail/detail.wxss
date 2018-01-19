@@ -1,0 +1,14 @@
+.movie-desc{
+  padding: 0 30rpx;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.desc-limit{
+  height: 84px;
+  overflow: hidden;
+}
+.desc-button{
+  padding: 40rpx;
+  text-align: center;
+}

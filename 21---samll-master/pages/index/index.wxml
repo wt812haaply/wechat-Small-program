@@ -1,0 +1,54 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="flow">
+  <image src="../../images/flow.png"></image>
+  <view class="btn" bindtap="openwin" data-url="select_phone">马上维修</view>
+</view>
+<view class="hotCon">
+  <view class="hotTitle">热门维修型号</view>
+  <view class="hot clearfix">
+    <view class="hot_l" data-brandID="{{brandID1}}" data-modelID="{{modelID1}}" catchtap="openwin1">
+      <image src="{{hotimg1}}" data-brandID="{{brandID1}}" data-modelID="{{modelID1}}" catchtap="openwin1"></image>
+      <text data-brandID="{{brandID1}}" data-modelID="{{modelID1}}" catchtap="openwin1">{{hottext1}}</text>
+    </view>
+    <view class="hot_r">
+      <view class="hot_r1" data-brandID="{{brandID2}}" data-modelID="{{modelID2}}" catchtap="openwin1">
+        <image src="{{hotimg2}}" data-brandID="{{brandID2}}" data-modelID="{{modelID2}}" catchtap="openwin1"></image>
+        <text data-brandID="{{brandID2}}" data-modelID="{{modelID2}}" catchtap="openwin1">{{hottext2}}</text>
+      </view>
+      <view data-brandID="{{brandID3}}" data-modelID="{{modelID3}}" catchtap="openwin1">
+        <image src="{{hotimg3}}" data-brandID="{{brandID3}}" data-modelID="{{modelID3}}" catchtap="openwin1"></image>
+        <text data-brandID="{{brandID3}}" data-modelID="{{modelID3}}" catchtap="openwin1">{{hottext3}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="silde clearfix">
+  <view class="b_r" catchtap="openwin" data-url="feedback">
+    <view class="imgCon b_r" catchtap="openwin" data-url="feedback">
+      <image src="../../images/yjfg.png" catchtap="openwin" data-url="feedback"></image>
+    </view>
+    <text catchtap="openwin" data-url="feedback">意见反馈</text>
+  </view>
+  <view class="b_r" catchtap="openwin" data-url="serverFlow">
+    <view class="imgCon" catchtap="openwin" data-url="serverFlow">
+      <image src="../../images/fwlc.png" catchtap="openwin" data-url="serverFlow"></image>
+    </view>
+    <text catchtap="openwin" data-url="serverFlow">服务流程</text>
+  </view>
+  <view catchtap="openwin" data-url="fqa">
+    <view class="imgCon" catchtap="openwin" data-url="fqa">
+      <image src="../../images/fqa.png" catchtap="openwin" data-url="fqa"></image>
+    </view>
+    <text catchtap="openwin" data-url="fqa">常见问题</text>
+  </view>
+</view>
+<view class="contact">
+  <contact-button type="default-light" size="125" session-from="小程序加速度手机维修"></contact-button>
+  <image src="../../images/contact.png"></image>
+</view>

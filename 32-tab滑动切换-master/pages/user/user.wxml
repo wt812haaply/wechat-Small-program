@@ -1,0 +1,46 @@
+<view class="bg"> 
+  
+		<view class="info"> 
+			<image class="pic" src="{{userInfo.avatarUrl}}" background-size="cover"/>  
+			<view class="box"> 
+				<view class="name">{{userInfo.nickName}}</view>  
+				<view class="text">这是很长，很好的一生。</view> 
+			</view> 
+		</view> 
+			
+		<view class="my-line">
+			<icon type="success"/>
+			<text class="wenzi">成功</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="info"/>
+			<text class="wenzi">信息</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="warn"/>
+			<text class="wenzi">警告</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="waiting"/>
+			<text class="wenzi">等待</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="safe_success"/>
+			<text class="wenzi">盾牌</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="search"/>
+			<text class="wenzi">搜索</text>
+			<text class="more"></text>
+		</view> 
+		<view class="my-line">
+			<icon type="download"/>
+			<text class="wenzi">下载</text>
+			<text class="more"></text>
+		</view> 
+  </view> 

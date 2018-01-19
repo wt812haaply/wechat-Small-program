@@ -1,0 +1,131 @@
+<!--index.wxml-->
+<view class=".main-view">
+    <view class="slide-mask" style="display:{{maskDisplay}}" bindtap="slideCloseEvent"></view>
+
+    <!--菜单布局-->
+    <view class="slide-menu" style="right: {{slideRight}}px;width: {{slideWidth}}px;height:{{slideHeight}}px;" animation="{{slideAnimation}}">
+        <view class="menu-title">
+            <icon style="margin-left:16px;" bindtap="slideCloseEvent" type="cancel" size="30" ></icon>
+            <text class="center-simper">菜单Menu</text>
+        </view>
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <text >{{userInfo.nickName}}</text>
+        </view>
+        <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的关注</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/star.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/draft.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的草稿</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/recent.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近浏览</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/book.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的书架</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/live.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的 Live</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/zhi.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的值乎</text>
+      </view>
+    </view>
+    </view>
+    </view>
+
+    <scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="search flex-wrp">
+        <image class="burger-img" src="../../images/burger.png" bindtap="ballClickEvent"/>
+        <view class="search-left flex-item">
+            <image src="../../images/search.png"></image>
+            <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+        </view>
+        <view class="search-right flex-item" bindtap="upper">
+            <image src="../../images/lighting.png"></image>
+        </view>
+    </view>
+
+        <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+            <view class="feed-item">
+                <view class="feed-source">
+                    <a class="">
+                        <view class="avatar">
+                            <image src="{{item.feed_source_img}}"></image>
+                        </view>
+                        <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+                    </a>
+                    <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+                </view>
+                <view class="feed-content">
+                    <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+                        <a class="question-link">
+                            <text>{{item.question}}</text>
+                        </a>
+                    </view>
+                    <view class="answer-body">
+                        <view bindtap="bindItemTap">
+                            <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
+                        </view>
+                        <view class="answer-actions" bindtap="bindItemTap">
+                            <view class="like dot">
+                                <a>{{item.good_num}} 赞同 </a>
+                            </view>
+                            <view class="comments dot">
+                                <a>{{item.comment_num}} 评论 </a>
+                            </view>
+                            <view class="follow-it">
+                                <a>关注问题</a>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>
+
+    <!--{
+      "pagePath": "pages/more/more",
+      "text": "",
+      "iconPath": "images/burger.png",
+      "selectedIconPath": "images/burger_focus.png"
+    }-->

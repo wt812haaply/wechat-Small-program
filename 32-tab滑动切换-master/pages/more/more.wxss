@@ -1,0 +1,38 @@
+/* pages/more/more.wxss */
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #22c3aa;  
+    text-align: center;  
+    line-height: 100rpx;
+}  
+.swiper-tab-list{  
+    font-size: 50rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #22c3aa;  
+}  
+.on{ 
+    color: #22c3aa;  
+    border-bottom: 10rpx solid #22c3aa;
+}   
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+    }  
+.swiper-box view{  
+    text-align: center;  
+}
+navigator {
+    height: 500rpx;
+    font-size: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
